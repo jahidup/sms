@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="sidebar">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search users by name/email">
+        <div id="searchResults" style="max-height:200px; overflow-y:auto;"></div>
+      </div>
+      <div class="conversation-list" id="convoList"></div>
+    </div>
+    <div class="chat-area hidden" id="chatArea">
+      <div class="chat-header">
+        <strong id="chatPartnerName"></strong>
+        <div class="options">
+          <button id="blockBtn">Block</button>
+          <button id="clearBtn">Clear Chat</button>
+          <button id="logoutChatBtn">Logout</button>
+        </div>
+      </div>
+      <div class="messages" id="messages"></div>
+      <div class="reply-bar hidden" id="replyBar">
+        <span id="replyingToText"></span>
+        <button id="cancelReply">✖</button>
+      </div>
+      <div class="input-area">
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button id="sendBtn">Send</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
