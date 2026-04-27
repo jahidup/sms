@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Register</h2>
+    <form id="regForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email address (Gmail, Outlook, etc.)" required>
+      <button type="submit">Send OTP</button>
+    </form>
+    <div id="msg" class="message"></div>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+    <div id="loading" class="loading" style="display:none;">Sending OTP...</div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
